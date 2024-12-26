@@ -3,6 +3,8 @@ import Sidebar from '../sidebar/Sidebar'
 import Navbar from '../navbar/Navbar'
 import './home.css'
 import Widget from '../widgets/Widget'
+import Featured from '../featured/Featured'
+import Chart from '../chart/Chart'
 const Home = () => {
   return (
     <div className='home'>
@@ -14,6 +16,10 @@ const Home = () => {
             <Widget type="order" />
             <Widget type="earnings" />
             <Widget type="balance" />
+            </div>
+            <div className="charts">
+              <Featured />
+              <Chart />
             </div>
         </div>
     </div>
