@@ -1,5 +1,5 @@
 import React from 'react'
-import './single.css'
+import './single.scss'
 
 const Single = () => {
   return (

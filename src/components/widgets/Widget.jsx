@@ -1,5 +1,5 @@
 import React from 'react'
-import './widget.css'
+import './widget.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleUp } from '@fortawesome/free-solid-svg-icons'
 import { faUser } from '@fortawesome/free-solid-svg-icons'

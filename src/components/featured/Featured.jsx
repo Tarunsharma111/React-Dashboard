@@ -1,5 +1,5 @@
 import React from "react";
-import "./featured.css";
+import "./featured.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEllipsisVertical } from "@fortawesome/free-solid-svg-icons";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
@@ -13,7 +13,7 @@ const Featured = () => {
     <div className="featured">
       <div className="top">
         <h1 className="title">Total Revenue</h1>
-        <FontAwesomeIcon icon={faEllipsisVertical} />
+        <FontAwesomeIcon icon={faEllipsisVertical} className="icon" />
       </div>
       <div className="bottom">
         <div className="featuredChart">

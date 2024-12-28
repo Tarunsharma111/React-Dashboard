@@ -10,7 +10,7 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
-import "./chart.css";
+import "./chart.scss";
 
 const data = [
   {
@@ -57,11 +57,11 @@ const data = [
   },
 ];
 
-const Chart = () => {
+const Chart = ({title, aspect}) => {
   return (
     <div className="chart">
-      <div className="title">Last 6 months (Revenue)</div>
-      <ResponsiveContainer width="100%" aspect={2 / 1}>
+      <div className="title">{title}</div>
+      <ResponsiveContainer width="100%" aspect={aspect}>
         <BarChart width={730} height={250} margin={{top:0, right:0, left:0, bottom:0}} data={data}>
           <CartesianGrid strokeDasharray="3 3" stroke="gray" className="chatGrid" />
           <XAxis dataKey="name" />
